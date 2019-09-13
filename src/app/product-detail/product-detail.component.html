@@ -92,7 +92,7 @@
                       <label class="col pl-5">{{group}}</label>
                       <label class="pl-5">Members {{group}}</label>
                     </div>
-                    <button  class="pull-right"data-toggle="modal" ng-attr-data-target="'#ggg'+ i">VIEW EMPLOYEES</button >
+                    <a  class="pull-right"data-toggle="modal" [attr.data-target]="'#ggg-'+ i">VIEW EMPLOYEES</a >
                     <!-- Modal -->
                       <div class="modal fade" id="ggg-{{i}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
