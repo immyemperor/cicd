@@ -1,0 +1,58 @@
+<div class="container-fluid p-0">
+  <app-nav></app-nav>
+  <div class="row m-0" id="body-row">
+
+  
+
+
+
+    <div id="contents" class="col justify-content-center" style="display: table-cell;vertical-align: middle;" valign="middle">
+      
+      <div class="row d-flex  align-content-center flex-wrap">
+        <div class="offset-md-3 col-md-6 ">
+          <div id="login-container " class="align-self-center m-5">
+
+              
+              <div>
+                <h4>Sign Up</h4>
+               
+                <p>Please register with below details to get benifits of Mirafra DevOps Application.</p>
+
+              </div>
+              <form class="">
+                 
+                  <div class=" form-group">
+                    <label for="firt_name"><b>First Name</b></label>
+                    <input type="text" class="form-control no-border" type="text" placeholder="Enter First Name" name="firt_name" required>
+                    <label for="last_name"><b>Last Name</b></label>
+                    <input type="text" class="form-control no-border" type="text" placeholder="Enter Last Name" name="last_name" required>
+                    <label for="email"><b>Email Address</b></label>
+                    <input type="text" class="form-control no-border" type="text" placeholder="Enter Email" name="email" required>
+
+
+                      
+                     
+                   <label>
+                    <input class="checkbox" type="checkbox" checked="checked" name="agreement">I Agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a> of Mirafra DevOps.
+                  </label>
+                  
+                  <div class="align-content-center" align="center">
+                    <p class="psw">Forgot <a href="#">password?</a></p>
+                    <input class="btn btn-danger btn-lg" (click)="register()" type="submit" value="Sign Up">
+                    <div>Already have Account <a [routerLink]="['/login']">Sign In</a></div>
+
+
+                  </div>
+                    
+                  </div>
+
+                 
+              </form>
+
+          </div>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
